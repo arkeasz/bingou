@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 2rem);
+    padding: 0 1.5rem;
+    margin: 0 auto !important;
+    height: 4rem;
+}
+
+.reset-button   {
+    height: 2.5rem;
+    width: 7rem;
+    background-color: var(--background-color);
+    cursor: pointer;
+}

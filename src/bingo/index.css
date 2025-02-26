@@ -1,0 +1,41 @@
+.default-theme {
+    display: grid;
+    place-content: center;
+    gap: .5rem;
+
+    .letter-block {
+        fill: #487C73
+    }
+
+    .color-text {
+        fill: #f8f4f4
+    }
+
+    .letter-block_top-shadow {
+        fill: #6C968E
+    }
+
+    .letter-block_shadow {
+        fill: #60827B
+    }
+
+    .letter-block_bottom-shadow {
+        fill: #39635B
+    }
+
+    .number-block {
+        fill: #70BAB1
+    }
+
+    .number-block_top-shadow {
+        fill: #8CC7C0
+    }
+
+    .number-block_shadow {
+        fill: #7AA9A3
+    }
+
+    .number-block_bottom-shadow {
+        fill: #59948D
+    }
+}

@@ -1,11 +1,19 @@
 import './App.css';
+import Bingo from './Bingo';
+import Header from './Header';
+import Result from './Result';
 
 const App = () => {
   return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
-    </div>
+    <>
+      <Header />
+      <div className="content">
+        <Result />
+        <div className="bingo">
+          <Bingo />
+        </div>
+      </div>
+    </>
   );
 };
 
