@@ -8,7 +8,7 @@ import './bingo/index.css';
 const Bingo = () => {
   return (
     <>
-      <div className="default-theme">
+      <div className="bingo default-theme">
         <Bsvg />
         <Isvg />
         <Nsvg />

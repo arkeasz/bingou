@@ -1,7 +1,7 @@
 const Isvg = () => {
   return (
     <>
-      <svg width="1327" height="87" viewBox="0 0 1327 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="1327" height="87" viewBox="0 0 1327 87" className="bingo-row" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 -7.62939e-06H86.1743V87H0V-7.62939e-06Z" className="letter-block"/>
       <path d="M0 40.1538V-7.62939e-06H39.7728H79.5455V3.34614V6.6923H43.0872H6.6288V43.5V80.3077H3.3144H0V40.1538Z" className="letter-block_top-shadow"/>
       <path d="M0 83.6538V80.3077H3.31439H6.62879V83.6538V87H3.31439H0V83.6538ZM79.5455 3.34614V-7.62939e-06H82.8599H86.1743V3.34614V6.6923H82.8599H79.5455V3.34614Z" className="letter-block_shadow"/>
