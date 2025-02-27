@@ -1,7 +1,7 @@
 # 🎯 **Bingou**
 
 A simple and fun Bingo game built with **Bun** for fast performance and modern web development.
-
+Thanks [nillotaelpro](https://github.com/nillotaelpro) for the vectors
 ![alt text](./public/image.png)
 ## 🚀 **Setup**
 
