@@ -1,8 +1,8 @@
 import './Result.css';
 
-const PlayButton = () => {
+const PlayButton = ({ onClick }) => {
   return (
-    <>
+    <div className='play' onClick={onClick}>
         <svg viewBox="0 0 80 80" className="play-button" xmlns="http://www.w3.org/2000/svg">
         <path d="M15 67.5V65H12.5H10V42.5V20H12.5H15V17.5V15H17.5H20V17.5V20H25H30V22.5V25H35H40V27.5V30H45H50V32.5V35H55H60V37.5V40H62.5H65V42.5V45H62.5H60V47.5V50H55H50V52.5V55H45H40V57.5V60H35H30V62.5V65H25H20V67.5V70H17.5H15V67.5Z" fill="#70BAB1"/>
         <mask id="path-2-inside-1_2716_3640" fill="white">
@@ -25,7 +25,7 @@ const PlayButton = () => {
         </filter>
         </defs>
         </svg>
-    </>
+    </div>
   );
 };
 
