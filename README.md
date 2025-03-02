@@ -3,6 +3,7 @@
 A simple and fun Bingo game built with **Bun** for fast performance and modern web development.
 
 ![alt text](./public/image.png)
+Thanks [nillotaelpro](https://github.com/nillotaelpro) for the vectors
 ## 🚀 **Setup**
 
 ### 1. Install Dependencies
