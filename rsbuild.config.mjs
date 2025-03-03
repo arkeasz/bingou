@@ -3,6 +3,9 @@ import { pluginReact } from '@rsbuild/plugin-react';
 import postcssNesting from 'postcss-nesting';
 
 export default defineConfig({
+  html: {
+    title: 'Bingou'
+  },
   server: {
     base: '/bingou',
   },
