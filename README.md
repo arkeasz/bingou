@@ -1,7 +1,6 @@
 # 🎯 **Bingou**
 
 A simple and fun Bingo game built with **Bun** for fast performance and modern web development.
-
 ![alt text](./public/image.png)
 Thanks [nillotaelpro](https://github.com/nillotaelpro) for the vectors
 ## 🚀 **Setup**
@@ -28,36 +27,6 @@ bun build
 Serve the production build locally to ensure everything works:
 ```bash
 bun preview
-```
-
-## 📂 **Project Structure**
-```
-Bingou/
-├── biome.json               # Biome configuration
-├── bun.lock                 # Bun lockfile
-├── package.json             # Project metadata and scripts
-├── public/                  # Static files
-│   ├── .gitkeep
-│   └── playbutton.svg       # Play button icon
-├── rsbuild.config.mjs       # Rsbuild configuration
-└── src/                     # Source code
-    ├── App.css
-    ├── App.jsx              # Main app component
-    ├── bingo/               # Bingo column components
-    │   ├── B.jsx
-    │   ├── G.jsx
-    │   ├── I.jsx
-    │   ├── N.jsx
-    │   └── O.jsx
-    ├── Bingo.jsx            # Bingo board logic
-    ├── Header.css
-    ├── Header.jsx           # Header component
-    ├── index.css
-    ├── index.jsx            # App entry point
-    ├── PlayButton.jsx       # Play button component
-    ├── reset.css            # CSS reset
-    ├── Result.css
-    └── Result.jsx           # Result display component
 ```
 
 ## 🎮 **Features**
