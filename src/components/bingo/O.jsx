@@ -1,26 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
+import useHighlightNumbers from "../../hooks/useHighlightNumbers";
 
 const Osvg = ({ pic }) => {
-      const filteredNumbers = pic ? Array.from(pic).filter(num => num >= 61 && num <= 75) : [];
-      const Oletter = useRef(null);
+  const Oletter = useRef(null);
+  useHighlightNumbers(Oletter, pic)
 
-      useEffect(() => {
-        if (Oletter.current) {
-          if (!pic || pic.length === 0) {
-            Oletter.current.querySelectorAll(".picked").forEach(el => el.classList.remove("picked"));
-            return;
-          }
-
-          Oletter.current.querySelectorAll(".picked").forEach(el => el.classList.remove("picked"));
-
-          pic.forEach(num => {
-            const elements = Oletter.current.querySelectorAll(`.num-${num}`);
-            elements.forEach(el => el.classList.add("picked"));
-          });
-        }
-      }, [pic]);
-
-    return (
+  return (
         <>
             <svg ref={Oletter} width="1327" height="87" viewBox="0 0 1327 87" className="bingo-row" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 -3.05176e-05H86.1743V87H0V-3.05176e-05Z" className="O-letter letter-block"/>

@@ -1,10 +1,9 @@
-import Bsvg from './bingo/B'
-import Isvg from './bingo/I'
-import Nsvg from './bingo/N'
-import Gsvg from './bingo/G'
-import Osvg from './bingo/O'
-import './bingo/index.css';
-import { useEffect, useRef } from 'react'
+import Bsvg from './B'
+import Isvg from './I'
+import Nsvg from './N'
+import Gsvg from './G'
+import Osvg from './O'
+import './index.css';
 
 const Bingo = ({ bingo, pickedNumbers }) => {
 
