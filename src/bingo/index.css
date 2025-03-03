@@ -51,3 +51,27 @@
         fill: #59948D
     }
 }
+
+.picked {
+
+    &.letter-block {
+        fill: #111 !important
+    }
+
+    &.color-text {
+        fill: #111 !important
+    }
+
+    &.letter-block_top-shadow {
+        fill: #111 !important
+    }
+
+    &.letter-block_shadow {
+        fill: #111 !important
+    }
+
+    &.letter-block_bottom-shadow {
+        fill: #111 !important
+    }
+
+}
