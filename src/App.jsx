@@ -70,6 +70,7 @@ const App = () => {
   };
 
   useEffect(() => {
+    if (isFinished) return; 
     let a = []
     bingo.forEach(el => {
       if (el[1].length == 0)  {
