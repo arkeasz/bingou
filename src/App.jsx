@@ -13,9 +13,9 @@ const App = () => {
   const [number, setNumber] = useState(null);
   const [bingo, setBingo] = useState([]);
   const [pickedNumbers, setPickedNumbers] = useState(new Set());
-  const [isFinished, setIsFinished] = useState(false)
+  const [isFinished, setIsFinished] = useState(false);
 
-  useEffect(() => {
+  const initializeBingo = () => {
     const BINGO = [
       ['B', range(1, 16)],
       ['I', range(16, 31)],
@@ -23,8 +23,11 @@ const App = () => {
       ['G', range(46, 61)],
       ['O', range(61, 76)]
     ];
-
     setBingo(BINGO);
+  };
+
+  useEffect(() => {
+    initializeBingo();
   }, []);
 
   const randomRange = (min, max) => {
@@ -57,36 +60,35 @@ const App = () => {
         return row;
       });
     });
-    playAudio('/bingou/audios/Coin.wav')
+    playAudio('/bingou/audios/Coin.wav');
   };
 
   const reset = () => {
-    playAudio('/bingou/audios/1up.wav')
+    playAudio('/bingou/audios/1up.wav');
     setLetter(null);
     setNumber(null);
-    setBingo([]);
     setPickedNumbers(new Set());
-    setIsFinished(false)
+    setIsFinished(false);
+    initializeBingo(); 
   };
 
   useEffect(() => {
-    if (isFinished) return; 
-    let a = []
+    let a = [];
     bingo.forEach(el => {
-      if (el[1].length == 0)  {
-        a.push(el)
+      if (el[1].length === 0) {
+        a.push(el);
       }
-    })
+    });
 
-    if (a.length == 5) {
+    if (a.length === 5) {
       playAudio('/bingou/audios/gameover.wav');
-      setIsFinished(true)
+      setIsFinished(true);
     }
-  }, [bingo])
+  }, [bingo]);
 
   return (
     <>
-      { isFinished ? <GameOver handleClick={reset} /> : null }
+      {isFinished ? <GameOver handleClick={reset} /> : null}
       <Header handleClick={reset} />
       <div className="content">
         <Result letter={letter} number={number} handleClick={play} />
